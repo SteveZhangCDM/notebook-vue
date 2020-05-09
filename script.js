@@ -8,5 +8,9 @@ var app = new Vue({
     add: function () {
       this.list.push(this.inputvalue);
     },
+    deleteBtn: function (index) {
+      console.log(index);
+      this.list.splice(index, 1);
+    },
   },
 });
