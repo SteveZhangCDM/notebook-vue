@@ -12,5 +12,8 @@ var app = new Vue({
       console.log(index);
       this.list.splice(index, 1);
     },
+    deleteAll: function () {
+      this.list = [];
+    },
   },
 });
