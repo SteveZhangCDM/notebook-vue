@@ -5,5 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notebook</title>
   </head>
-  <body></body>
+  <body>
+    <div id="app">
+      <section>
+        <header class="header">
+          <h1>My Notebook</h1>
+          <input
+            v-model="inputvalue"
+            class="new-todo"
+            autofocus="autofocus"
+            autocomplete="off"
+            placeholder="type new test"
+            @keyup.enter="add"
+          />
+        </header>
+        <!-- section list area  -->
+        <section class="main">
+          <ul class="todolist">
+            <li class="todo" v-for="(item,index) in list">
+              <div class="view">
+                <span class="index">{{ index + 1 }}</span>
+                <label>{{item}}</label>
+                <button class="destory-btn"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <footer class="footer"></footer>
+      </section>
+      <footer class="info"></footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
