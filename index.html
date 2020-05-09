@@ -34,10 +34,16 @@
           </ul>
         </section>
         <footer class="footer">
-          <span class="todo-count">
+          <span class="todo-count" v-if="list.length !='0'">
             <strong>{{list.length}}</strong> items left
           </span>
-          <button class="clear-Btn" @click="deleteAll">Clear</button>
+          <button
+            class="clear-Btn"
+            @click="deleteAll"
+            v-show="list.length != '0'"
+          >
+            Clear
+          </button>
         </footer>
       </section>
       <footer class="info"></footer>
