@@ -1,0 +1,26 @@
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.new-todo {
+  display: block;
+  width: 100%;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+}
+
+.destory-btn {
+  border-radius: 30px;
+  float: right;
+}
+
+.clear-Btn {
+  border-radius: 10px;
+  float: right;
+}
